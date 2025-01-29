@@ -14,6 +14,7 @@ const App = () => {
       <Projects />
       <Service />
       <Contact />
+      {/* <RouterProvider router={router} /> */}
     </div>
   )
 }

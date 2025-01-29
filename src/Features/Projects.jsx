@@ -7,7 +7,7 @@ import PropTypes from "prop-types"
 
 const Projects = () => {
   return (
-    <div className="w-full min-h-[87vh] pt-16">
+    <div className="w-full min-h-[87vh] pt-16" id="project">
       <div className="flex items-center justify-center w-full">
         <Reveal>
           <h1 className="mb-5 text-xl font-bold text-center text-transparent capitalize font-Poppins md:text-2xl bg-gradient-to-r from-gradientFrom to-gradietTo bg-clip-text">
@@ -20,8 +20,7 @@ const Projects = () => {
           gener=" SPA website"
           title="Landing Page"
           description="Beautifull landing page using react, tailwindcss and other package"
-          image="https://private-user-images.githubusercontent.com/158570827/407443215-807d505a-6f35-4696-997e-3c3c2269e309.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgwODkzMzksIm5iZiI6MTczODA4OTAzOSwicGF0aCI6Ii8xNTg1NzA4MjcvNDA3NDQzMjE1LTgwN2Q1MDVhLTZmMzUtNDY5Ni05OTdlLTNjM2MyMjY5ZTMwOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyOFQxODMwMzlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00NWFjZjFmYTNlNTg0NDdlODJhZjY2Nzc4ZWU0NDk0NDBlMDk1NWRiZjFmMjkxN2E2YmU2MTJjNTczM2ZmODg5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.OnuKKM_I4Kzq8oRH0prLPuqK2uEc5GmiJk5JyQc_ruE"
-          link="https://github.com/sami855-ux/Student-managment-Dashboard.git"
+          image="../../public/proj2.png"
         />
         <Card
           gener=" Mobile App"
@@ -34,7 +33,7 @@ const Projects = () => {
           gener="Website"
           title="E-commerce Website App"
           description="Dynamic website for purchasing any items"
-          image="https://private-user-images.githubusercontent.com/158570827/404395191-00ab910e-92d2-41b4-a5ce-ea5e8d618329.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzgwODg5MjEsIm5iZiI6MTczODA4ODYyMSwicGF0aCI6Ii8xNTg1NzA4MjcvNDA0Mzk1MTkxLTAwYWI5MTBlLTkyZDItNDFiNC1hNWNlLWVhNWU4ZDYxODMyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMTI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDEyOFQxODIzNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZmIwYWY2YzM2YWU3YTQ3YjQ1ZWZjZTM3ODhiZmU5YTQ0YWU2NmFhNDBiNjAwYWQ2OWJmYTE1OTE0YzZiMTFiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pHIsDyY_X_eKlA7EPWLAHSbx9W6nvwBY-If4EQOaUEQ"
+          image="../../public/proj1.png"
           link="https://github.com/sami855-ux/E-commerce-Website.git"
         />
         <Card

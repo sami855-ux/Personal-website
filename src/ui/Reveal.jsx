@@ -57,7 +57,7 @@ const Reveal = ({ children, width = "fit-content" }) => {
 }
 
 Reveal.propTypes = {
-  width: PropTypes.string.isRequired,
+  width: PropTypes.string,
   children: PropTypes.func.isRequired,
 }
 

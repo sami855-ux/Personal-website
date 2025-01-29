@@ -4,10 +4,11 @@ import PropTypes from "prop-types"
 import Reveal from "../ui/Reveal"
 import TextAnimate from "../ui/TextAnimate"
 import BoxAnimate from "../ui/BoxAnimate"
+import CardOne from "../ui/CardOne"
 
 const Service = () => {
   return (
-    <div className="w-full min-h-[70vh] mt-7 md:mt-0">
+    <div className="w-full min-h-[70vh] mt-7 md:mt-0 md:mb-32" id="service">
       <div className="flex items-center justify-center w-full">
         <Reveal>
           <h2 className="mb-3 text-xl font-bold text-center text-transparent md:text-3xl bg-gradient-to-r from-gradientFrom to-gradietTo bg-clip-text">
@@ -27,19 +28,19 @@ const Service = () => {
           serviceName="FrontEnd Development"
           left={-100}
           text={
-            "I possess strong front-end development skills, including proficiency in HTML, CSS, and JavaScript, along with experience in modern frameworks like React and Angular, enabling me to create responsive and visually appealing user interfaces that enhance user experience"
+            "As a skilled front-end developer, I create visually compelling and user-friendly interfaces that blend aesthetics and functionality, delivering exceptional digital experiences."
           }
         />
         <ServiceCard
           icon={<HiTemplate size={25} />}
           serviceName="Website Design"
-          text="I specialize in website design, leveraging principles of user experience and responsive design to create visually appealing and functional websites that effectively communicate brand identity and engage users."
+          text="As a skilled front-end developer, I craft visually compelling and user-friendly interfaces that deliver exceptional digital experiences."
         />
         <ServiceCard
           icon={<AiOutlineCode size={25} />}
           serviceName="BackEnd Development"
           right={100}
-          text="I have robust back-end development skills, including expertise in languages like Node.js and Python, along with experience in database management using SQL and NoSQL, enabling me to build efficient, secure, and scalable server-side applications."
+          text="I have robust back-end development skills, including expertise in languages like Node.js and Python, along with experience in database management using SQL and NoSQL."
         />
       </section>
     </div>
@@ -49,17 +50,18 @@ const Service = () => {
 const ServiceCard = ({ icon, serviceName, left, right, text }) => {
   return (
     <BoxAnimate left={left ? left : null} right={right ? right : null}>
-      <section className="flex items-center flex-col p-5  w-72 h-[270px] bg-[#2b2a2a] rounded-lg  ">
+      <section className="flex items-center flex-col p-5  w-72 h-[330px] bg-[#2b2a2a] rounded-lg  ">
         <span className="flex items-center justify-center w-12 h-12 bg-[#353535] rounded-full cursor-pointer hover:bg-gradietTo transition-all duration-200 ease-out">
           {icon}
         </span>
-        <p className="py-3 font-semibold leading-relaxed text-center text-normal text-slate-50 font-Poppins">
+        <CardOne heading={serviceName} desc={text}></CardOne>
+        {/* <p className="py-3 font-semibold leading-relaxed text-center text-normal text-slate-50 font-Poppins">
           {serviceName}
         </p>
 
         <span className="px-2 pt-2 text-xs font-thin text-center font-Poppins">
           {text}
-        </span>
+        </span> */}
       </section>
     </BoxAnimate>
   )

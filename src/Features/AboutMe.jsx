@@ -5,7 +5,7 @@ import me from "../me.jpg"
 
 const AboutMe = () => {
   return (
-    <div className="w-full min-h-[87vh] pt-10">
+    <div className="w-full min-h-[87vh] pt-10" id="aboutme">
       <div className="flex items-center justify-center w-full">
         <Reveal>
           <h2 className="px-2 py-2 text-xl font-bold text-center capitalize md:px-0 md:text-2xl">

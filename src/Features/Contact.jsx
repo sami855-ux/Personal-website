@@ -56,7 +56,10 @@ Input.propTypes = {
 
 const ContactCard = () => {
   return (
-    <section className="h-40 md:h-24 mb-7 p-5 flex gap-5 items-center w-[400px] md:w-[600px] bg-gradient-to-r from-gradientFrom to-gradietTo rounded-xl">
+    <section
+      className="h-40 md:h-24 mb-7 p-5 flex gap-5 items-center w-[400px] md:w-[600px] bg-gradient-to-r from-gradientFrom to-gradietTo rounded-xl"
+      id="contact"
+    >
       <div className="">
         <p className="pb-3 font-semibold font-Poppins">
           Let&apos;s create something amazing together!

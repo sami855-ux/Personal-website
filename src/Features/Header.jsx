@@ -1,8 +1,7 @@
 import { useState } from "react"
 import { useScroll, useMotionValueEvent, motion } from "framer-motion"
-
 import { HiOutlineBars3, HiXMark } from "react-icons/hi2"
-import MenuAnimate from "../ui/MenuAnimate"
+import { Link } from "react-scroll"
 
 const Header = () => {
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -27,8 +26,17 @@ const Header = () => {
       className="sticky top-0 z-30 flex items-center justify-between w-full h-10 px-4 md:h-16 md:px-24 bg-bgcolor"
     >
       <div className="relative flex items-center w-24 h-full">
-        <h1 className="text-xl font-bold text-transparent md:text-3xl bg-gradient-to-r from-gradientFrom to-gradietTo bg-clip-text ">
-          Sami
+        <h1 className="text-xl font-bold text-transparent md:text-3xl bg-gradient-to-r from-gradientFrom to-gradietTo bg-clip-text cursor-pointer">
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={-30}
+            duration={500}
+            className=""
+          >
+            Sami
+          </Link>
         </h1>
       </div>
       <Menu />
@@ -79,102 +87,135 @@ const Header = () => {
           Menu
         </h2>
 
-        <li
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={500}
           className="py-2 pl-1 text-xs text-gray-700 cursor-pointer font-Poppins hover:bg-slate-400"
           onClick={() => {
             setMobileMenu(false)
           }}
         >
           Home
-        </li>
-        <li
+        </Link>
+        <Link
+          to="aboutme"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
           className="py-2 pl-1 text-xs text-gray-700 cursor-pointer font-Poppins hover:bg-slate-400"
           onClick={() => {
             setMobileMenu(false)
           }}
         >
           AboutMe
-        </li>
-        <li
+        </Link>
+        <Link
+          to="project"
+          spy={true}
+          smooth={true}
+          offset={-50}
+          duration={500}
           className="py-2 pl-1 text-xs text-gray-700 cursor-pointer font-Poppins hover:bg-slate-400"
           onClick={() => {
             setMobileMenu(false)
           }}
         >
           Projects
-        </li>
-        <li
+        </Link>
+        <Link
+          to="service"
+          spy={true}
+          smooth={true}
+          offset={-10}
+          duration={500}
           className="py-2 pl-1 text-xs text-gray-700 cursor-pointer font-Poppins hover:bg-slate-400"
           onClick={() => {
             setMobileMenu(false)
           }}
         >
           Service
-        </li>
+        </Link>
 
-        <li
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-500}
+          duration={500}
           className="py-2 pl-1 text-xs text-gray-700 cursor-pointer font-Poppins hover:bg-slate-400"
           onClick={() => {
             setMobileMenu(false)
           }}
         >
-          contact
-        </li>
+          Contact
+        </Link>
       </ul>
     </motion.nav>
   )
 }
 
 const Menu = () => {
-  const [active, setActive] = useState("home")
   return (
     <ul className="items-center hidden md:flex ">
-      <MenuAnimate>
-        <li
-          className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins ${
-            active == "home" ? "border-b-2 border-orange-500 " : null
-          }`}
+      <li
+        className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins `}
+      >
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-30}
+          duration={500}
+          className=""
         >
           Home
-        </li>
-      </MenuAnimate>
-      <MenuAnimate>
-        <li
-          className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins ${
-            active == "aboutme" ? "text-orange-500" : null
-          }`}
-        >
-          AboutMe{" "}
-        </li>
-      </MenuAnimate>
-      <MenuAnimate>
-        <li
-          className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins ${
-            active == "service" ? "text-orange-500" : null
-          }`}
-        >
+        </Link>
+      </li>
+
+      <li
+        className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins `}
+      >
+        <Link to="aboutme" spy={true} smooth={true} offset={-50} duration={500}>
+          AboutMe
+        </Link>
+      </li>
+      <li
+        className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins `}
+      >
+        <Link to="project" spy={true} smooth={true} offset={-50} duration={500}>
           Projects
-        </li>
-      </MenuAnimate>
-      <MenuAnimate>
-        <li
-          className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins ${
-            active == "service" ? "text-orange-500" : null
-          }`}
+        </Link>
+      </li>
+      <li
+        className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins `}
+      >
+        <Link
+          to="service"
+          spy={true}
+          smooth={true}
+          offset={-120}
+          duration={500}
         >
           Service
-        </li>
-      </MenuAnimate>
-
-      <MenuAnimate>
-        <li
-          className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins ${
-            active == "contact" ? "text-orange-500" : null
-          }`}
+        </Link>
+      </li>
+      <li
+        className={`text-sm text-slate-50 px-2 mx-1 cursor-pointer font-extralight capitalize font-Poppins`}
+      >
+        <Link
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
-          contact
-        </li>
-      </MenuAnimate>
+          Contact
+        </Link>
+      </li>
     </ul>
   )
 }
