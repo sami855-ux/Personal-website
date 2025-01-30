@@ -7,6 +7,7 @@ import TextAnimate from "../ui/TextAnimate"
 
 import projectOne from "../../public/proj1.png"
 import projectTwo from "../../public/proj2.png"
+import CardTwo from "../ui/CardTwo"
 
 const Projects = () => {
   return (
@@ -55,9 +56,13 @@ const Card = ({ gener, title, description, image, link }) => {
   const [enter, setEnter] = useState(false)
   return (
     <TextAnimate>
-      <section className="overflow-hidden rounded-lg w-72 h-72 bg-gray-800/25">
+      <CardTwo>
+        {/* <section className="overflow-hidden rounded-lg w-72 h-72 bg-gray-800/25"> */}
         <div
           className="relative w-full h-48 bg-gray-300"
+          style={{
+            transform: "translateZ(75px)",
+          }}
           onMouseEnter={() => {
             setEnter(true)
           }}
@@ -65,7 +70,14 @@ const Card = ({ gener, title, description, image, link }) => {
             setEnter(false)
           }}
         >
-          <img src={`${image}`} alt="" className="object-cover w-full h-full" />
+          <img
+            src={`${image}`}
+            alt=""
+            className="object-cover w-full h-full"
+            style={{
+              transform: "translateZ(50px)",
+            }}
+          />
           <section
             className={`${
               enter
@@ -85,7 +97,8 @@ const Card = ({ gener, title, description, image, link }) => {
         <p className="w-full px-4 pt-2 text-xs font-light text-center ">
           {description}
         </p>
-      </section>
+      </CardTwo>
+      {/* </section> */}
     </TextAnimate>
   )
 }
