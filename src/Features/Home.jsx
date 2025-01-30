@@ -25,7 +25,7 @@ const Home = () => {
       />
 
       <Reveal>
-        <h1 className="py-4 mt-8 md:mb-0 mb-2  text-2xl font-bold text-center md:text-5xl text-textcolor font-Poppins">
+        <h1 className="py-4 mt-8 mb-2 text-2xl font-bold text-center md:mb-0 md:text-5xl text-textcolor font-Poppins">
           <span className="text-transparent font-Poppins bg-gradient-to-r from-gradientFrom to-gradietTo bg-clip-text">
             I&apos;am Samule Tale,
           </span>{" "}
@@ -62,7 +62,7 @@ const Home = () => {
         </Reveal>
       </div>
 
-      <div className="absolute bottom-[-2%] flex items-center justify-center h-16 space-x-5 md:bottom-20 left-10 md:h-52 md:w-16 w-80 md:flex-col md:space-x-0 md:space-y-5">
+      <div className="absolute -bottom-[50px] flex items-center justify-center h-16 space-x-5 md:bottom-20 left-10 md:h-52 md:w-16 w-80 md:flex-col md:space-x-0 md:space-y-5">
         <IconAnimate>
           <a href="https://www.facebook.com/sami.tale.18" target="_blank">
             <FaFacebook

@@ -55,14 +55,14 @@ export default function CardTwo({ children }) {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="relative  overflow-hidden rounded-lg w-72 h-96 bg-gray-800/25"
+      className="relative overflow-hidden rounded-lg w-72 h-96 bg-gray-800/25"
     >
       <div
         style={{
           transform: "translateZ(75px)",
           transformStyle: "preserve-3d",
         }}
-        className="absolute inset-4 grid place-content-center rounded-xl bg-gray-800/75 shadow-lg"
+        className="absolute grid shadow-lg inset-4 place-content-center rounded-xl bg-gray-800/75"
       >
         {/* <FiMousePointer
           style={{
@@ -74,7 +74,7 @@ export default function CardTwo({ children }) {
           style={{
             transform: "translateZ(50px)",
           }}
-          className="text-center text-2xl font-bold"
+          className="text-2xl font-bold text-center"
         >
           HOVER ME
         </p> */}
