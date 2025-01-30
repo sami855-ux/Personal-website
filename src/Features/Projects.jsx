@@ -1,9 +1,12 @@
 import { useState } from "react"
 import { FaGithub } from "react-icons/fa6"
+import PropTypes from "prop-types"
 
 import Reveal from "../ui/Reveal"
 import TextAnimate from "../ui/TextAnimate"
-import PropTypes from "prop-types"
+
+import projectOne from "../../public/proj1.png"
+import projectTwo from "../../public/proj2.png"
 
 const Projects = () => {
   return (
@@ -15,12 +18,12 @@ const Projects = () => {
           </h1>
         </Reveal>
       </div>
-      <div className="flex flex-col items-center justify-center w-full gap-5 pt-0 cursor-pointer md:flex-row md:pt-8">
+      <div className="flex flex-col items-center justify-center w-full gap-5 pt-0 cursor-pointer md:flex-row md:pt-8 flex-wrap">
         <Card
           gener=" SPA website"
           title="Landing Page"
           description="Beautifull landing page using react, tailwindcss and other package"
-          image="../../public/proj2.png"
+          image={projectTwo}
         />
         <Card
           gener=" Mobile App"
@@ -33,7 +36,7 @@ const Projects = () => {
           gener="Website"
           title="E-commerce Website App"
           description="Dynamic website for purchasing any items"
-          image="../../public/proj1.png"
+          image={projectOne}
           link="https://github.com/sami855-ux/E-commerce-Website.git"
         />
         <Card
